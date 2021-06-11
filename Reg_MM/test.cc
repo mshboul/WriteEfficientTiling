@@ -10,14 +10,18 @@
 #include <sys/errno.h>
 #include <sys/types.h>
 #include <time.h>     
-#include "m5op.h"
+#if GEM5 
+    #include "m5op.h"
+#endif
 #include <inttypes.h>
 
-#include "cpucounters.h"        // Intell PCM monitoring tool
+#if Intel_PCM     
+    #include "cpucounters.h"        // Intell PCM monitoring tool
+#endif
 using namespace std;
 
 /* This is the control panel of the benchmark */
-#define     GEM5            0                   // Running on Gem5 or not
+//#define     GEM5            0                   // Running on Gem5 or not
 #define     DEBUG           0                   // Print debug results or not
 #define     PRINT           0                   // Print results or not
 #define     P               8                   // Number of processors
@@ -26,7 +30,7 @@ using namespace std;
 #define     N               8*1024		// Square matrix dimension N*N
 #define     TILE            16                  // Tile size
 #define     NUM_CP          0                   // Not applicable here
-#define     Intel_PCM       1                   // Running on Intel PCM counters or not
+//#define     Intel_PCM       1                   // Running on Intel PCM counters or not
 #define     NUM_BARRIERS    4                   // Number of barriers
 #define     Benchmark_Mode  0                   //0: base, 1: Recompute, 2: Logging, 3: Naive Checkpointing
 #define	    NUMBER_OF_TRIALS	3		//Number of times to repeat the whole benchmark (this is to reduce results randomness)

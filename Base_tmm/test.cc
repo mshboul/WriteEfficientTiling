@@ -17,7 +17,7 @@ using namespace std;
 /* This is the control panel of the benchmark */
 #ifndef SCRIPT//This will remove all the control panel details when using the script
 
-        #define     Intel_PCM       1                   // Running on Intel PCM counters or not
+//        #define     Intel_PCM       1                   // Running on Intel PCM counters or not
         #define     P               8                   // Number of processors
         #define     N               1024             // Square matrix dimension N*N
         #define     TILE            16                  // Tile size
@@ -28,7 +28,7 @@ using namespace std;
 #include "cpucounters.h"        // Intell PCM monitoring tool
 #endif
 /*These are the variables that are not conflicting with the script*/
-#define     GEM5            0                   // Running on Gem5 or not
+//#define     GEM5            0                   // Running on Gem5 or not
 #define     DEBUG           0                   // Print debug results or not
 #define     PRINT           0                   // Print results or not
 #define     SIM_LIMIT       500024                   // Number of k2 loops to simulate
