@@ -164,6 +164,7 @@ void checkC()
   if(passed) printf("CheckC passed all tests!\n");
 }
 
+//Performs hierarchical tiling (Write-Efficient-Tiling "WET")
 void* multiply(void* tmp) {
   /* each thread has a private version of local variables */
   int   tid = (uintptr_t) tmp; 
