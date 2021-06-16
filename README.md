@@ -1,4 +1,6 @@
 # WriteEfficientTiling
+[![DOI](https://zenodo.org/badge/372949366.svg)](https://zenodo.org/badge/latestdoi/372949366)
+
 
 This source code illustrates the implementation of our DAC'20 paper, titled: (WET: Write Efficient Loop Tiling for Non-Volatile Main Memory).
 The code represents the 3 main schemes evaluated in the paper, each of which is located in a separate directory, as follows:
