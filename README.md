@@ -14,10 +14,11 @@ In each of these directories, the main code is located in file (test.cc). The co
 2. make pcm: builds a version that will activate the [Intel PCM tools](https://software.intel.com/content/www/us/en/develop/articles/intel-performance-counter-monitor.html), for evaluations based on real-hardware. The path of Intel PCM tools in your system should be indicated in the Makefile through the variable (pcm_location). 
 
 
-System Requirements:
+**System Requirements:**
 The code should work on any Linux system with proper C++ compiler. However, our testing was mainly conducted on Red Hat Enterprise Linux Server (version 7.6). Using gcc version 4.8.5. When using the gem5 or PCM evaluation modes, the corresponding library must be installed in the system and indicated in the Makefile following the instructions mentioned above.
 
 
 
-Full Paper Citation. Please use this to cite our paper if this code helped you.
+**Full Paper Citation:**
+Please use this to cite our paper if this code helped you:
 M. Alshboul, J. Tuck and Y. Solihin, "WET: Write Efficient Loop Tiling for Non-Volatile Main Memory," 2020 57th ACM/IEEE Design Automation Conference (DAC), 2020, pp. 1-6, doi: 10.1109/DAC18072.2020.9218612.
