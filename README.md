@@ -10,7 +10,7 @@ The code represents the 3 main schemes evaluated in the paper, each of which is 
 
 
 In each of these directories, the main code is located in file (test.cc). The code can be built using the Makefile found in each of the directories, as follows:
-1. make: builds a version that performs the computation only, which helps for debugging/implementation purposes.
+1. make: builds a version that performs the computation only (without stats collection), which helps for debugging/implementation purpose since it doesn't require any additional special libraries.
 2. make gem5: builds a version that will activate the gem5 simulator tools, for simulation-based evaluations. The path of the gem5 m5thread library in your system should be indicated in the Makefile through the variable (m5threads_location), in addition to providing the path to the g++ version that is compatible with your gem5 simulator, using the variable (gPP_location).
 3. make pcm: builds a version that will activate the [Intel PCM tools](https://software.intel.com/content/www/us/en/develop/articles/intel-performance-counter-monitor.html), for evaluations based on real-hardware. The path of Intel PCM tools in your system should be indicated in the Makefile through the variable (pcm_location). 
 
